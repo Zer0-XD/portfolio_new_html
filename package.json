@@ -1,8 +1,8 @@
 {
-  "name": "brutalism-portfolio",
+  "name": "brutalism-portfolio - Anees",
+  "author" : "Anees",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
   "scripts": {
     "start": "parcel src/index.html --open",
     "clean": "rm -rf dist/*",
