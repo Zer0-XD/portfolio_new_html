@@ -35,7 +35,6 @@
     
     background-color: #FCE4CE;
     color: var(--text-light);
-
     font-family: 'bebas', sans-serif;
 
     /* overflow-x: hidden; */
@@ -65,9 +64,11 @@
     color: #E36620;
     display: flex;
     justify-content: center;
+    opacity: 0;
   }
 
   .hero-subtitle{
+    opacity: 0;
     /* text-align: left; */
     margin-left: 10%;
     justify-content: left;
@@ -101,7 +102,7 @@
     position: absolute;
     /* z-index: 1; */
     /* mix-blend-mode: difference; */
-    bottom: max(10vh,14vh);
+    bottom: max(9vh,13vh);
     right: 6vw;
     transform: rotate(-6deg);
     /* mix-blend-mode: exclusion; */
@@ -109,17 +110,19 @@
   }
 
   .stroked-two{
-    bottom: max(0vh, 3vh);
+    bottom: max(-1vh, 2vh);
   }
 
   .big-circle{
     z-index: -1;
-    mix-blend-mode: exclusion;
+    /* mix-blend-mode: exclusion; */
+
+    filter: hue-rotate(-140deg) brightness(0.5);
     position: absolute;
     top:5vh;
     right: 10vw;
-    height: 460px;
-    width: 460px;
+    height: max(420px, 520px);
+    width: max(460px, 520px);
     transition: all 0.1s ease-in-out;
     
   }
@@ -145,11 +148,13 @@
     left: 0;
     width: 100%;
     height: 100%;
+    opacity: 0;
     background-repeat: repeat-x;
     background-size: 100% 100%;
     background-position: center;
     background-color: var(--bg-dark);
-    mix-blend-mode: difference;
+    /* mix-blend-mode: difference; */
+    /* filter: hue-rotate(-150deg) brightness(0.5); */
   }
 
   .bg-line-mobile{
@@ -186,11 +191,9 @@
     transform: rotate(-90deg);
   }
   .down-arrow{
-    height: max(70px, 80px);
-    width: 30px;
+    height: max(70px, 90px);
+    width: 60px;
     animation: arrow-down 2s infinite;
-	  left: max(0vw,1.5vw);
-      position: relative;
   }
 
   @keyframes arrow-down {
@@ -238,7 +241,7 @@
 
     }
     .big-circle{
-      mix-blend-mode: exclusion;
+      /* mix-blend-mode: exclusion; */
       /* position: absolute; */
       /* top:max(4vh,6vh); */
       /* right: 2vw; */
@@ -269,7 +272,7 @@
 
     .down-arrow{
       height: max(70px,90px);
-      width: max(20px,30px);
+      width: max(25px,40px);
       animation: arrow-down 2s infinite;
       left: max(1vw,3vw);
       position: relative;
@@ -307,8 +310,8 @@
       flex-direction: column;
     }
     .down-arrow{
-      height: max(30px, 60px);
-      width: 25px;
+      height: max(30px, 50px);
+      width: 60px;
       animation: arrow-down 2s infinite;
     }
   }
@@ -719,6 +722,7 @@
   font-weight: 500;
   box-shadow: 4px 4px 0  0 #b652f5;
   transition: all 0.25s ease-in-out;
+  z-index: 9999;
 }
 
 .resume-btn:hover{
@@ -757,6 +761,7 @@
 }
 
 .social-icon{
+  z-index: 99999;
   margin-right: 10px;
   margin-left: 10px;
   height: max(50px, 100px);
@@ -812,6 +817,7 @@
 /* scrollbar */
 body::-webkit-scrollbar {
   width: max(0.8rem,1rem);
+  /* width: 0; */
 }
 
 body::-webkit-scrollbar-track {
@@ -819,11 +825,13 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-background-color: rgb(107, 107, 107);
-/* max-height: 30px; */
+  background-color: rgb(107, 107, 107);
+  /* max-height: 30px; */
+  /* opacity: 0; */
 outline: 1px solid rgb(2, 2, 2);
 box-shadow: 2px 3px 0px 0px rgb(20, 20, 20);
 }
+
 
 
 /* loading */
@@ -841,9 +849,10 @@ box-shadow: 2px 3px 0px 0px rgb(20, 20, 20);
 
 .loading__text {
   letter-spacing: 30px; 
-  color: rgb(15, 15, 15); 
+  color: rgba(15, 15, 15, 0.8); 
   font-weight: 700; 
   position: relative; 
+  font-size: max(3rem,4rem);
   top: -50px; 
   pointer-events: none;
   user-select: none;  
@@ -884,7 +893,7 @@ box-shadow: 2px 3px 0px 0px rgb(20, 20, 20);
 
 .pace .pace-progress {
 	position: fixed;
-	z-index: 2000;
+	z-index: 10;
 	top: 0;
 	right: 0;
 	height: 5rem;
@@ -899,6 +908,7 @@ box-shadow: 2px 3px 0px 0px rgb(20, 20, 20);
 	display: block;
 	position: absolute;
 	top: 30%;
+  overflow-y: hidden;
 	right: 50%;
 	content: attr(data-progress-text);
 	font-family: mono;
@@ -909,7 +919,16 @@ box-shadow: 2px 3px 0px 0px rgb(20, 20, 20);
 	color: rgba(0, 0, 0, 0.565);
 }
 
-main{
+.page{
   opacity: 0;
   /* transform: translateY(100px); */
+}
+
+::-moz-selection { 
+  background-color: rgba(183, 102, 26, 0.817);
+  color: white;
+}
+::selection { 
+  background-color: rgba(183, 102, 26, 0.817);
+  color: white;
 }
