@@ -181,7 +181,9 @@
   }
   .down-arrow{
     height: max(70px, 90px);
-    width: 60px;
+    width: 30px;
+    position: relative;
+     left: max(1vw,1.3vw);
     animation: arrow-down 2s infinite;
   }
 
