@@ -7,9 +7,20 @@
 
     <link rel="stylesheet" href="./css/globals.css">
 
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/gsap/dist/gsap.min.js"></script>
+    <script src="/node_modules/pace-js/pace.min.js"></script>
+    <script src="./js/loading.js"></script>
     <title>Anees - my portfolio</title>
 </head>
 <body >
+    <div id="preloader">
+        <div class="loading__text">
+            LOADING
+        </div>
+    </div>
+    
+    <main class="page">
     <!-- hero section -->
     <div class="hero">   
         <!-- bg lines -->
@@ -154,26 +165,12 @@
             
         </div>
     </div>
+</main>
 
     <!-- ---------- -->
 
-    <script type="module">
-        var $ = require( "jquery" );
+    <script src="./js/scroll-text.js" type="module"></script>
 
-        var senseSpeed = 5;
-        var previousScroll = 500;
-        $(window).scroll(function(event){
-        var scroller = $(this).scrollTop();
-        var scrollbottom = $(document).height() - $(window).height();
-        if (scroller > previousScroll){
-            $(".scroll-down").addClass("scroll-down-hidden");
-        } 
-        else if(scroller <= previousScroll){
-            $(".scroll-down").removeClass("scroll-down-hidden");
-        }
-        previousScroll = scroller;
-        });
-    </script>
 
 </body>
 </html>
