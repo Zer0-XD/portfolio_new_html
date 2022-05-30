@@ -49,6 +49,7 @@
     height: 100%;
     width: 100%;
     margin-bottom: 45vh;
+    opacity: 1;
       /* background-image: url("./assets/images/svg/hero_line.svg"); */
   }
 
@@ -181,9 +182,7 @@
   }
   .down-arrow{
     height: max(70px, 90px);
-    width: 30px;
-    position: relative;
-     left: max(1vw,1.3vw);
+    width: 60px;
     animation: arrow-down 2s infinite;
   }
 
@@ -269,10 +268,10 @@
     .big-circle{
       mix-blend-mode: exclusion;
       position: absolute;
-      top:4vh;
+      top:max(4vh,6vh);
       right: 2vw;
-      height: 50vh;
-      width: 50vw;
+      height: max(180px, 210px);
+      width: max(180px, 210px);
     }
     .bg-line-mobile{
       display: block;
@@ -787,3 +786,6 @@
 .spaced{
   margin-bottom: max(30vh, 70vh);
 }
+
+
+/* loading */
