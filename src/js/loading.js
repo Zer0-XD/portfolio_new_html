@@ -17,9 +17,9 @@ Pace.on('done', () => {
         }, "-=2.5")
         .to('.loading__text', {
             delay: .15,
-            duration: 1.4,
+            duration: 1,
             opacity: 0,
-            yPercent: -400,
+            yPercent: -200,
             ease: "BezierEasing(0.19,1,0.22,1)"
         }, 'p')
         .to('.page', {
@@ -28,6 +28,7 @@ Pace.on('done', () => {
             delay: .1,
             // y: 0,
             opacity: 1,
+            display: 'block',
             ease: Expo.easeInOut
         }, '-=2.5')
         .to('.big-circle , .hero-title , .hero-subtitle , .stroked-text', {
@@ -50,10 +51,5 @@ Pace.on('done', () => {
             width: 0,
             display: 'none',
             // position: 'static'
-        })
-        .to('::-webkit-scrollbar', {
-            duration: 0.1,
-            delay: 0,
-            width: 10,
         })
 })
