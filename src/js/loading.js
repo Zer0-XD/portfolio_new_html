@@ -54,8 +54,14 @@ Pace.on('done', () => {
         })
         .to('.stroked-text', {
             duration: 0.5,
-            delay: .1,
+            delay: .0,
             opacity: 1,
             y: -5
+        })
+        .to('#project-span', {
+            duration: 0.5,
+            delay: .1,
+            opacity: 1,
+            x: -140
         })
 })

@@ -187,6 +187,7 @@
     flex-direction: column;
     transition: all 0.25s ease-in;
     opacity: 0;
+    pointer-events: none;
     /* transform: translateY(100px); */
   }
 
@@ -283,14 +284,7 @@
       bottom: max(5vh, 8vh);
     }
 
-/*     .down-arrow{
-      height: max(70px,90px);
-      width: max(25px,40px);
-      animation: arrow-down 2s infinite;
-      left: max(0.7vw,1.2vw);
-      position: relative;
-    } */
-	  .down-arrow{
+    .down-arrow{
       height: max(70px,90px);
       width: max(25px,35px);
       animation: arrow-down 2s infinite;
@@ -565,7 +559,7 @@
 
   .next:hover{
     background-color: #000;
-    box-shadow: 3px 3px 0px 0px rgb(55, 55, 55);
+    box-shadow: 3px 3px 0px 0px rgb(75, 75, 75);
     color: white;
     transform: scale(1.1) translateY(-10px);
   }
@@ -742,6 +736,20 @@
   color: #000;
 }
 
+.tag-tailwind
+{
+  background-color: #00ccff;
+  /* background-color: #00cf22; */
+  color: #000;
+}
+
+.tag-material
+{
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* -- */
 .first-project{
   border: 2px solid black;
   box-shadow: 4px 4px 0  0 #a200ff;
@@ -1061,7 +1069,8 @@ a{
   color: #000;
   position: absolute;
   top:20;
-  right: 30;
+  right: -100;
+  opacity: 0;
   /* border-radius: 50%; */
   border: 1px solid #000;
   padding: 20px;
@@ -1096,7 +1105,6 @@ a{
   border-radius: 50%;
   box-shadow: 3px 3px 0px 0px rgb(20, 20, 20);
   transition: all 0.25s ease-in-out;
-
   opacity: 0;
 }
 
@@ -1118,6 +1126,5 @@ a{
   border-radius: 50%;
   box-shadow: 3px 3px 0px 0px rgb(20, 20, 20);
   transition: all 0.25s ease-in-out;
-
   opacity: 1;
 }
