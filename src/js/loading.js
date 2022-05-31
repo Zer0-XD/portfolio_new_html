@@ -39,20 +39,20 @@ Pace.on('done', () => {
             display: 'none',
             // position: 'static'
         })
-        .to('.big-circle , .hero-title , .hero-subtitle , .stroked-text', {
-            duration: 2,
-            delay: .3,
+        .to('.hero-title , .hero-subtitle ,.big-circle ,  .stroked-text', {
+            duration: 1.5,
+            delay: .15,
             y: -5,
             // x: 10,
             opacity: 1,
             ease: Expo.easeInOut
-        }, '-=1.5')
-        .to('#project-span', {
+        }, '-=2.5')
+        .to('.project-span', {
             duration: 0.1,
             delay: 0,
             opacity: 1,
             ease: Expo.easeInOut,
-            x: -140
+            // x: -140
         })
         .to('.bg-line', {
             duration: 0.8,

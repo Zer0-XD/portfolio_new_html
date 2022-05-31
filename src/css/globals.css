@@ -127,6 +127,7 @@
     filter: brightness(0.8);
     position: absolute;
     top:-5vh;
+    opacity: 0;
     right: 10vw;
     height: max(520px, 60vh);
     width: max(520px, 40vw);
@@ -588,7 +589,10 @@
     .window-about , .window-skills{
       width: max(300px,80%);
       margin-bottom: 10px;
-      transform: none;
+      transform: rotate(1deg);
+    }
+    .window-about{
+      transform: rotate(-1deg);
     }
   }
     
@@ -641,6 +645,7 @@
   align-items: center;
   transition: all 0.25s ease-in-out;
   text-decoration: none;
+  margin:1rem;
 }
 
 .project-item:hover{
@@ -653,8 +658,8 @@
 }
 
 .project-image{
-  height: 200px;
-  width: max(380px, 140px);
+  height: 250px;
+  width: max(480px, 240px);
   /* object-fit: fill; */
 }
 
@@ -671,7 +676,7 @@
 /* tags */
 
 .tags{
-  font-size: 0.8rem;
+  font-size: max(1rem, 0.5rem);
   color: #000;
   margin-bottom: 10px;
   letter-spacing: 1px;
@@ -799,7 +804,7 @@
 
 @media screen and (max-width: 768px){
   .project-item{
-    width: 40vw;
+    width: auto;
     height: auto;
     margin-bottom: 1.8rem;
   }
@@ -808,7 +813,11 @@
     height: 100px;
   }
   .project-title{
-    font-size: 0.9rem;
+    font-size: max(0.9rem,1.4rem);
+  }
+  .projects-row{
+    flex-direction: column;
+    width: 100%;
   }
 }
 
@@ -979,6 +988,7 @@ box-shadow: 2px 3px 0px 0px rgb(20, 20, 20);
   pointer-events: none;
   user-select: none;  
   text-align: center;
+  transition: all 0.1s ease-in-out;
 }
 
 .pace {
@@ -1064,13 +1074,15 @@ a{
   color: #000;
 }
 
-#project-span{
+
+/* project btn at top */
+.project-span{
   font-size: max(1.5rem,2rem);
   /* font-weight: 700; */
   color: #000;
   position: absolute;
   top:20;
-  right: -100;
+  right: 20;
   opacity: 0;
   /* border-radius: 50%; */
   border: 1px solid #000;
@@ -1083,11 +1095,13 @@ a{
   transition: all 0.25s ease-in-out;
 }
 
-#project-span:hover{
+.project-span:hover{
   transform: rotate(0deg) scale(1.1);
   transition: all 0.25s ease-in-out;
 }
+/* ------- */
 
+/* scroll to top */
 
 .scroll-top{
   position: fixed;
@@ -1112,6 +1126,7 @@ a{
 
 .scroll-top-visible{
   position: fixed;
+  font-size : 1.4rem;
   bottom: 10vh;
   right: 20px;
   z-index: 1000;
@@ -1129,3 +1144,6 @@ a{
   transition: all 0.25s ease-in-out;
   opacity: 1;
 }
+
+
+/* --------------- */
