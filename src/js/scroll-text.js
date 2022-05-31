@@ -7,4 +7,11 @@ $(window).scroll(function (event) {
     else {
         $(".scroll-down").removeClass("scroll-down-hidden");
     }
+
+    if ($(window).scrollTop() > 300) {
+        $(".scroll-top").addClass("scroll-top-visible");
+    }
+    else {
+        $(".scroll-top").removeClass("scroll-top-visible");
+    }
 });

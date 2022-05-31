@@ -220,7 +220,7 @@
 
   @media only screen and (max-width : 767px) {
     .hero{
-      margin-bottom: 25vh;
+      margin-bottom: 5vh;
     }
     .center{
       height: 50vh;
@@ -287,8 +287,7 @@
       height: max(70px,90px);
       width: max(25px,40px);
       animation: arrow-down 2s infinite;
-/*       left: max(0.7vw,1.2vw); */
-	    left:max(18px, 20px);
+      left: max(0.7vw,1.2vw);
       position: relative;
     }
   
@@ -387,7 +386,7 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     box-shadow: 6px 6px 0px 0px #7c12ffdf;
-    width: 40vw;
+    width: 39vw;
     margin-bottom: 25px;
     transform: rotate(-2.5deg);
   }
@@ -829,7 +828,7 @@
   font-weight: 500;
   box-shadow: 4px 4px 0  0 #b652f5;
   transition: all 0.25s ease-in-out;
-  z-index: 9999;
+  /* z-index: 9999; */
 }
 
 .resume-btn:hover{
@@ -868,7 +867,7 @@
 }
 
 .social-icon{
-  z-index: 99999;
+  /* z-index: 99999; */
   margin-right: 10px;
   margin-left: 10px;
   height: max(50px, 100px);
@@ -1041,4 +1040,77 @@ box-shadow: 2px 3px 0px 0px rgb(20, 20, 20);
 ::selection { 
   background-color: rgba(183, 102, 26, 0.817);
   color: white;
+}
+
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+#project-span{
+  font-size: max(1.5rem,2rem);
+  /* font-weight: 700; */
+  color: #000;
+  position: absolute;
+  top:20;
+  right: 30;
+  /* border-radius: 50%; */
+  border: 1px solid #000;
+  padding: 20px;
+  padding-left: 14px;
+  padding-right: 14px;
+  background-color: rgb(178, 157, 117);
+  box-shadow: 3px 3px 0px 0px rgb(20, 20, 20);
+  transform: rotate(2.3deg);
+  transition: all 0.25s ease-in-out;
+}
+
+#project-span:hover{
+  transform: rotate(0deg) scale(1.1);
+  transition: all 0.25s ease-in-out;
+}
+
+
+.scroll-top{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  border: 0;
+  height: max(30px, 60px);
+  width: max(30px, 60px);
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(168, 169, 164);
+  border-radius: 50%;
+  box-shadow: 3px 3px 0px 0px rgb(20, 20, 20);
+  transition: all 0.25s ease-in-out;
+
+  opacity: 0;
+}
+
+
+.scroll-top-visible{
+  position: fixed;
+  bottom: 10vh;
+  right: 20px;
+  z-index: 1000;
+  border: 0;
+  height: max(30px, 60px);
+  width: max(30px, 60px);
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(186, 179, 125);
+  border-radius: 50%;
+  box-shadow: 3px 3px 0px 0px rgb(20, 20, 20);
+  transition: all 0.25s ease-in-out;
+
+  opacity: 1;
 }
