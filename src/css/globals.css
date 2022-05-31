@@ -283,11 +283,18 @@
       bottom: max(5vh, 8vh);
     }
 
-    .down-arrow{
+/*     .down-arrow{
       height: max(70px,90px);
       width: max(25px,40px);
       animation: arrow-down 2s infinite;
       left: max(0.7vw,1.2vw);
+      position: relative;
+    } */
+	  .down-arrow{
+      height: max(70px,90px);
+      width: max(25px,35px);
+      animation: arrow-down 2s infinite;
+      left: max(0.9vw,2.5vw);
       position: relative;
     }
   
