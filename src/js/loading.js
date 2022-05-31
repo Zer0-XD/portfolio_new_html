@@ -24,7 +24,7 @@ Pace.on('done', () => {
         }, 'p')
         .to('.page', {
             // zIndex: 99999,
-            duration: 1.5,
+            duration: 1,
             delay: .1,
             // y: 0,
             opacity: 1,
@@ -39,29 +39,24 @@ Pace.on('done', () => {
             display: 'none',
             // position: 'static'
         })
-        .to('.big-circle , .hero-title , .hero-subtitle', {
+        .to('.big-circle , .hero-title , .hero-subtitle , .stroked-text', {
             duration: 2,
             delay: .3,
             y: -5,
             // x: 10,
             opacity: 1,
             ease: Expo.easeInOut
-        }, '-=2.5')
+        }, '-=1.5')
+        .to('#project-span', {
+            duration: 0.1,
+            delay: 0,
+            opacity: 1,
+            ease: Expo.easeInOut,
+            x: -140
+        })
         .to('.bg-line', {
             duration: 0.8,
             delay: .05,
             opacity: 1,
-        })
-        .to('.stroked-text', {
-            duration: 0.5,
-            delay: .0,
-            opacity: 1,
-            y: -5
-        })
-        .to('#project-span', {
-            duration: 0.5,
-            delay: .1,
-            opacity: 1,
-            x: -140
         })
 })
