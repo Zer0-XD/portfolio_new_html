@@ -31,6 +31,14 @@ Pace.on('done', () => {
             display: 'block',
             ease: Expo.easeInOut
         }, '-=2.5')
+        .to('#preloader', {
+            duration: 0.1,
+            delay: 0,
+            height: 0,
+            width: 0,
+            display: 'none',
+            // position: 'static'
+        })
         .to('.big-circle , .hero-title , .hero-subtitle', {
             duration: 2,
             delay: .3,
@@ -49,13 +57,5 @@ Pace.on('done', () => {
             delay: .1,
             opacity: 1,
             y: -5
-        })
-        .to('#preloader', {
-            duration: 0.1,
-            delay: 0,
-            height: 0,
-            width: 0,
-            display: 'none',
-            // position: 'static'
         })
 })

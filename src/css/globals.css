@@ -631,7 +631,7 @@
   flex-direction: column;
   align-content: center;
   /* gap: 0.5rem; */
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
   align-items: center;
   transition: all 0.25s ease-in-out;
   text-decoration: none;
@@ -639,6 +639,10 @@
 
 .project-item:hover{
   transform: rotate(3deg) scale(1.1);
+  transition: all 0.25s ease-in-out;
+}
+.project-item:nth-child(2):hover{
+  transform: rotate(-2.5deg) scale(1.1);
   transition: all 0.25s ease-in-out;
 }
 
@@ -762,12 +766,22 @@
   box-shadow: 4px 4px 0  0 #0392e4;
 }
 
+.seventh-project{
+  border: 2px solid black;
+  box-shadow: 4px 4px 0  0 #2809c1;
+}
+
+.eight-project{
+  border: 2px solid black;
+  box-shadow: 4px 4px 0  0 #dbb406;
+}
+
 
 @media screen and (max-width: 768px){
   .project-item{
     width: 40vw;
     height: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 1.8rem;
   }
   .project-image{
     width: 100%;
