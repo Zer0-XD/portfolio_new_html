@@ -31,7 +31,7 @@ Pace.on('done', () => {
             display: 'block',
             ease: Expo.easeInOut
         }, '-=2.5')
-        .to('.big-circle , .hero-title , .hero-subtitle , .stroked-text', {
+        .to('.big-circle , .hero-title , .hero-subtitle', {
             duration: 2,
             delay: .3,
             y: -5,
@@ -40,9 +40,15 @@ Pace.on('done', () => {
             ease: Expo.easeInOut
         }, '-=2.5')
         .to('.bg-line', {
-            duration: 2,
-            delay: .25,
+            duration: 0.8,
+            delay: .05,
             opacity: 1,
+        })
+        .to('.stroked-text', {
+            duration: 0.5,
+            delay: .1,
+            opacity: 1,
+            y: -5
         })
         .to('#preloader', {
             duration: 0.1,
