@@ -809,8 +809,8 @@
     margin-bottom: 1.8rem;
   }
   .project-image{
-        width: 290px;
-    height: 150px;
+        width: 60vw;
+    height: 100%;
 }
   }
   .project-title{
