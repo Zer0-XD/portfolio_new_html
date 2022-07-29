@@ -649,11 +649,11 @@ margin:1rem;
 }
 
 .project-item:hover{
-transform: rotate(3deg) scale(1.1);
+transform: rotate(0.3deg) scale(1.05);
 transition: all 0.25s ease-in-out;
 }
 .project-item:nth-child(2):hover{
-transform: rotate(-2.5deg) scale(1.1);
+transform: rotate(-0.5deg) scale(1.05);
 transition: all 0.25s ease-in-out;
 }
 
@@ -776,7 +776,7 @@ box-shadow: 4px 4px 0  0 #0044ff;
 
 .fourth-project{
 border: 2px solid black;
-box-shadow: 4px 4px 0  0 #2bd301;
+box-shadow: 4px 4px 0  0 #30821b;
 }
 
 
@@ -788,7 +788,7 @@ box-shadow: 4px 4px 0  0 #cf3d0c;
 
 .sixth-project{
 border: 2px solid black;
-box-shadow: 4px 4px 0  0 #0392e4;
+box-shadow: 4px 4px 0  0 #51f329;
 }
 
 .seventh-project{
