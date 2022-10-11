@@ -123,6 +123,7 @@ html, body {
 .big-circle{
   z-index: -1;
   /* mix-blend-mode: exclusion; */
+  object-fit:scale-down;
 
   filter: brightness(0.8);
   position: absolute;
